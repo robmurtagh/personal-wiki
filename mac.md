@@ -23,3 +23,4 @@ Command + Shift + .
 ```bash
 Alt (aka Option) + Drag Width
 ```
+

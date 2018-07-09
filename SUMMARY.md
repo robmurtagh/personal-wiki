@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Initial page](README.md)
-* [AWS Appsync](AWS-Appsync.md)
-* [AWS Athena](AWS-Athena.md)
-* [Git](Git.md)
-* [Mac](Mac.md)
+* [robmurtagh/personal-wiki](README.md)
+* [AWS Appsync](AWS/aws-appsync.md)
+* [AWS Athena](AWS/aws-athena.md)
+* [Git](git.md)
+* [Mac](mac.md)
 

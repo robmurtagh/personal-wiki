@@ -6,7 +6,7 @@
 ALTER TABLE db.table ADD COLUMNS (column_name string)
 ```
 
-* Change column type (doesn't work):
+* Change column type \(doesn't work\):
 
 ```sql
 ALTER TABLE db.table CHANGE column_name column_name timestamp;
@@ -19,12 +19,13 @@ SHOW PARTITIONS appsflyer_stream
 ```
 
 * Special characters can be e.g. quoted
-```sql
-SELECT column_name_1, "column-name-2", column_name_3, *
-FROM db.table
-WHERE column_name_3 is not null
-ORDER BY timestamp_column DESC;
-```
+
+  ```sql
+  SELECT column_name_1, "column-name-2", column_name_3, *
+  FROM db.table
+  WHERE column_name_3 is not null
+  ORDER BY timestamp_column DESC;
+  ```
 
 * Using a substring:
 
@@ -59,3 +60,4 @@ SUM(CAST(sysvar_sales AS Double)) AS Sales
 ```sql
 true AS picnic_install
 ```
+

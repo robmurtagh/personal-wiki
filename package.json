@@ -1,0 +1,19 @@
+{
+  "name": "personal-wiki",
+  "version": "1.0.0",
+  "description": "Code repository for my personal notes",
+  "main": "README.md",
+  "scripts": {
+    "git-amend": "git add . && git commit --amend --no-edit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robmurtagh/personal-wiki.git"
+  },
+  "author": "Robert Murtagh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robmurtagh/personal-wiki/issues"
+  },
+  "homepage": "https://wiki.robmurtagh.com/"
+}
