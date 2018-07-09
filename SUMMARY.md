@@ -6,4 +6,7 @@
   * [Athena](aws/athena.md)
 * [Git](git.md)
 * [Mac](mac.md)
-
+* [Python](python/README.md)
+  * [iPython](python/ipython.md)
+  * [pip](python/pip.md)
+  * [Virtualenv](python/virtualenv.md)
