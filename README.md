@@ -6,3 +6,4 @@ Welcome to my personal wiki where I keep notes in [Markdown](https://guides.gith
 * [Repo](https://github.com/robmurtagh/personal-wiki)
 
 Pull requests welcome via Github.
+
