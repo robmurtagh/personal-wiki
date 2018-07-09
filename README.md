@@ -1,2 +1,4 @@
 # Initial page
 
+Some content
+
