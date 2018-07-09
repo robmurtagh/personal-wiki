@@ -1,4 +1,4 @@
-# AWS Athena
+# Athena
 
 * Add columns:
 
