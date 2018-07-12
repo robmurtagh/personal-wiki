@@ -6,6 +6,7 @@
   * [Athena](aws/athena.md)
 * [Git](git.md)
 * [Mac](mac.md)
+* [Sketch](sketch.md)
 * [Python](python/README.md)
   * [iPython](python/ipython.md)
   * [pip](python/pip.md)
