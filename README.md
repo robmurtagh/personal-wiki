@@ -1,4 +1,4 @@
-# robmurtagh/personal-wiki
+# robmurtagh/wiki
 
 Welcome to my personal wiki where I keep notes in [Markdown](https://guides.github.com/features/mastering-markdown/) format, and build them as documentation pages with [Gitbook](https://www.gitbook.com/).
 
