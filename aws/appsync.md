@@ -1,6 +1,6 @@
 # Appsync
 
-To use [Graphql Playground](https://github.com/prismagraphql/graphql-playground), add the following header:
+## To use [Graphql Playground](https://github.com/prismagraphql/graphql-playground), add the following header:
 
 ```javascript
 {
