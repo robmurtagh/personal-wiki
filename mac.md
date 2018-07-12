@@ -24,3 +24,5 @@ Command + Shift + .
 Alt (aka Option) + Drag Width
 ```
 
+* Change default app by e.g. extension:
+ * Download [RCDefault](http://www.rubicode.com/Software/RCDefaultApp/), it gets added to your system preferences

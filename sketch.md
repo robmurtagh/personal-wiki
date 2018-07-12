@@ -8,13 +8,13 @@
 Alt + Cmd + C
 ```
 
-* Sort All Layers:
+* Sort layers alphabetically:
 
 ```text
 Cntrl + Shift + P
 ```
 
-* Reverse Sort All Layers:
+* Reverse sort layers alphabetically:
 
 ```text
 Cntrl + Shift + O
