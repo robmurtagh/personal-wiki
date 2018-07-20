@@ -5,6 +5,7 @@
   * [Appsync](aws/appsync.md)
   * [Athena](aws/athena.md)
 * [Command Line](cmd.md)
+* [Haskell](haskell.md)
 * [Git](git.md)
 * [Mac](mac.md)
 * [Sketch](sketch.md)
