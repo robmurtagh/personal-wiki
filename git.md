@@ -48,3 +48,8 @@ git pull
 git stash pop
 ```
 
+## Show remote URL
+
+```bash
+git remote show origin
+```
