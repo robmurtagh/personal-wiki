@@ -1,5 +1,13 @@
 # Command line
 
+
+## Add to path on Mac
+
+```bash
+sudo nano /etc/paths
+```
+
+
 ## Using pipe and grep:
 
 ```bash
@@ -24,6 +32,13 @@ kill [PID]
 
 ```bash
 find . -name "node_modules" -exec rm -rf '{}' +
+```
+
+## Location of a command in PATH
+
+The following will return something along the lines of `hie is /Users/username/.local/bin/hie`:
+```bash
+type -a hie
 ```
 
 ## Common commands

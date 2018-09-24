@@ -5,6 +5,7 @@
   * [Appsync](aws/appsync.md)
   * [Athena](aws/athena.md)
 * [Command Line](cmd.md)
+* [cURL](curl.md)
 * [Haskell](haskell.md)
 * [Git](git.md)
 * [Mac](mac.md)
@@ -13,3 +14,4 @@
   * [iPython](python/ipython.md)
   * [pip](python/pip.md)
   * [Virtualenv](python/virtualenv.md)
+* [VSCode](vscode.md)

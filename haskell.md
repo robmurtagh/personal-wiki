@@ -16,6 +16,12 @@ ghci session in the context of the current project:
 stack ghci
 ```
 
+## Stack build and run executable
+
+```bash
+stack build && stack exec package-name-exe
+```
+
 ## Install a dependency
 
 * For a global package install, like `npm install -g package` use cabal NOT stack:
@@ -34,6 +40,12 @@ cabal update && cabal install package
 ```
 
 
+## Passing args to stack ghc
+
+```bash
+stack ghc -- --supported-extensions
+```
+
 ## ghci helpers
 
 `reload` does what it says on the tin and refreshes all names:
@@ -42,3 +54,102 @@ cabal update && cabal install package
 :reload
 :quit
 ```
+
+
+## Useful resources
+
+- [Problems with Cabal and how to avoid](https://wiki.haskell.org/Cabal/Survival)
+- [Cabal github repo](https://github.com/haskell/cabal)
+- [Why is Stack not Cabal](https://www.fpcomplete.com/blog/2015/06/why-is-stack-not-cabal)
+- [Stackage is Stable Hackage and packages here have been tested to avoid dependency conflicts](https://www.stackage.org/)
+- [Stack.yaml versus .Cabal](https://docs.haskellstack.org/en/stable/stack_yaml_vs_cabal_package_file/)
+- [Stack FAQs](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md)
+
+## Notes
+
+
+Packages GHC can use >  Are registered with "ghc-pkg register" > And (almost always) built with Cabal >  With build dependencies resolved by cabal-install > From Hackage.
+Packages GHC can use >  Are registered with "ghc-pkg register" > And (almost always) built with Cabal >  With build dependencies resolved by stack > From Stackage (if possible...) or Hackage
+
+
+- Stackage specifies a 'resolver' 
+> a GHC version, a number of packages available for installation, and various settings like build flags"
+
+[Global Stack managed dependencies](https://docs.haskellstack.org/en/stable/yaml_configuration/):
+- `/etc/stack/config.yaml` - for system global non-project default options
+- `~/.stack/config.yaml` - for user non-project default options
+When stack is invoked outside a stack project it will source project specific options from `~/.stack/global-project/stack.yaml`. When stack is invoked inside a stack project, only options from `<project dir>/stack.yaml` are used, and `~/.stack/global-project/stack.yaml` is ignored.
+
+
+## Environment setup
+
+
+### What is my global ghc, why, and how do I change it?
+
+Global ghc could have been installed in all sorts of ways, it is found by running:
+
+```bash
+ghc -v
+```
+
+But really you probably want to be using a Stack managed global setup e.g. outside of a project folder, run one of the following commands:
+```bash
+stack ghci -v
+stack ghc -v
+```
+This should tell you in the logs that you are using e.g. `.stack/global-project/stack.yaml`. The `resolver` field in this file will determine which ghc version you are using. 
+
+### What is my project GHC, why, and where is it stored?
+
+The project ghc is set via the local `stack.yaml`, again using the resolver to determine the version. ghc itself will be installed somewhere centrally by Stack.
+
+### What are my globally installed packages, why, and where are they stored?
+
+The following command when run globally tells you all of the packages which are installed:
+
+```bash
+ghc-pkg list
+```
+
+### What are my project installed packages, why, and where are they stored?
+
+## Nice to haves
+
+### Rename ghci command prompt
+
+Within the ghci REPL/command prompt, you can rename (to e.g. `λ >`) using `:set prompt`:
+
+```bash
+:set prompt  "\x03BB > "
+```
+
+
+### Language extensions in GHCI
+
+```bash
+:set -XExistentialQuantification
+```
+
+## Multiline input
+
+[Multiline input](https://en.wikibooks.org/wiki/Haskell/Using_GHCi_effectively)
+```text
+   *Main> :{
+   *Main| let askname = do
+   *Main|               putStrLn "What is your name?"
+   *Main|               name <- getLine
+   *Main|               putStrLn $ "Hello " ++ name
+   *Main| :}
+   *Main>
+```
+
+
+## Template Haskell
+
+[Template Haskell](https://wiki.haskell.org/A_practical_Template_Haskell_Tutorial) is similar to Lisp macros.
+
+```haskell
+{-# LANGUAGE TemplateHaskell #-}
+```
+
+It is used e.g. by `lens` to generate the various lenses into data structures __at compile time__

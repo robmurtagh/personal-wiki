@@ -24,15 +24,15 @@ git commit -m "Initial commit"
 
 ## Forget file after adding to .gitignore
 
-  ```bash
-  git rm --cached CREDENTIALS.py
-  ```
+```bash
+git rm --cached CREDENTIALS.py
+```
 
 ## Push tags to origin:
 
-  ```bash
-  git push origin --tags
-  ```
+```bash
+git push origin --tags
+```
 
 ## General force push
 
@@ -53,3 +53,7 @@ git stash pop
 ```bash
 git remote show origin
 ```
+
+## How to use master, release and feature branches
+
+[Here's](https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369) a good article discussing a basic workflow for that
