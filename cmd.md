@@ -14,13 +14,15 @@ sudo nano /etc/paths
 pip3 freeze | grep Xlsx
 ```
 
-## Open current directory in finder:
+
+## Open current directory in finder
 
 ```bash
 open .
 ```
 
-## Find and kill process on a port:
+
+## Find and kill process on a port
 
 ```bash
 lsof -i tcp:3000
@@ -34,12 +36,14 @@ kill [PID]
 find . -name "node_modules" -exec rm -rf '{}' +
 ```
 
+
 ## Location of a command in PATH
 
 The following will return something along the lines of `hie is /Users/username/.local/bin/hie`:
 ```bash
 type -a hie
 ```
+
 
 ## Common commands
 
@@ -66,6 +70,7 @@ type -a hie
 * `nano` - text editor
 * `source` - source ~/.bash_profile makes all aliases available in the current session
 * `history` - command history
+
 
 ## Environment settings
 

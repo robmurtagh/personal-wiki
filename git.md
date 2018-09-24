@@ -1,13 +1,13 @@
 # Git
 
-## Amend the last commit:
+## Amend the last commit
 
 ```bash
 git commit --amend
 git commit —-amend —-no-edit
 ```
 
-## Squash commits:
+## Squash commits
 
 ```bash
 git rebase --interactive --root
@@ -40,7 +40,9 @@ git push origin --tags
 git push -—force origin
 ```
 
-## Git equivalent of SVN update - something along the lines of... :
+## 'SVN update'
+
+Something along the lines of should bring underlying versions up to date:
 
 ```bash
 git stash
@@ -54,6 +56,6 @@ git stash pop
 git remote show origin
 ```
 
-## How to use master, release and feature branches
+## Useful resources
 
-[Here's](https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369) a good article discussing a basic workflow for that
+- [Using master, release and feature branches](https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369) as a team

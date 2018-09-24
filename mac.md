@@ -1,6 +1,6 @@
 # Mac
 
-## Paste without formatting:
+## Paste without formatting
 
 ```text
 Command + Shift + V
@@ -12,24 +12,24 @@ Command + Shift + V
 Cmd + F3
 ```
 
-## Switch between two windows of the same app:
+## Switch between two windows of the same app
 
 ```text
 Command + `
 ```
 
-## Show/hide hidden folders:
+## Show/hide hidden folders
 
 ```text
 Command + Shift + .
 ```
 
-## Change default column width:
+## Change default column width
 
 ```text
-Alt (aka Option) + Drag Width
+Alt (aka Option, ⌥) + Drag Width
 ```
 
-## Change default app by e.g. extension:
+## Change default app
 
-- Download [RCDefault](http://www.rubicode.com/Software/RCDefaultApp/), it gets added to your system preferences
+[RCDefault](http://www.rubicode.com/Software/RCDefaultApp/) lets you change the default application by e.g. file extension. When you install, it gets added to your system preferences panel

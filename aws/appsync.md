@@ -1,6 +1,8 @@
 # AWS Appsync
 
-## To use [Graphql Playground](https://github.com/prismagraphql/graphql-playground), add the following header:
+## Using API key auth
+
+Add the following header to e.g. [Graphql Playground](https://github.com/prismagraphql/graphql-playground):
 
 ```javascript
 {
