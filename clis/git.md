@@ -13,7 +13,7 @@ git commit —-amend —-no-edit
 git rebase --interactive --root
 ```
 
-## Force squash commits - e.g. down to root commit:
+## Force squash commits - e.g. down to root commit
 
 ```bash
 rm -rf .git
@@ -28,7 +28,7 @@ git commit -m "Initial commit"
 git rm --cached CREDENTIALS.py
 ```
 
-## Push tags to origin:
+## Push tags to origin
 
 ```bash
 git push origin --tags

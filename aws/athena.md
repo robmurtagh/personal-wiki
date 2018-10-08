@@ -60,4 +60,3 @@ SUM(CAST(sysvar_sales AS Double)) AS Sales
 ```sql
 true AS picnic_install
 ```
-

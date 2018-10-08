@@ -1,10 +1,8 @@
 # Personal Wiki
 
-
 ## What notes I keep
 
 Welcome to my personal wiki where keep a record of things I don't find obvious in my day-to-day work. Most of the notes here relate to software development on a Mac computer.
-
 
 ## How this site works
 

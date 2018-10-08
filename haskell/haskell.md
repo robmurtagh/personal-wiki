@@ -5,7 +5,7 @@
 In parent directory, where `simple` is the template from `stack templates` list:
 
 ```bash
-stack new [project-name] simple 
+stack new [project-name] simple
 ```
 
 ## stack ghci
@@ -39,6 +39,11 @@ cabal update && cabal install package
                      , QuickCheck
 ```
 
+* List dependencies:
+
+```bash
+stack list-dependencies
+```
 
 ## Passing args to stack ghc
 
@@ -55,34 +60,32 @@ stack ghc -- --supported-extensions
 :quit
 ```
 
-
 ## Useful resources
 
-- [Problems with Cabal and how to avoid](https://wiki.haskell.org/Cabal/Survival)
-- [Cabal github repo](https://github.com/haskell/cabal)
-- [Why is Stack not Cabal](https://www.fpcomplete.com/blog/2015/06/why-is-stack-not-cabal)
-- [Stackage is Stable Hackage and packages here have been tested to avoid dependency conflicts](https://www.stackage.org/)
-- [Stack.yaml versus .Cabal](https://docs.haskellstack.org/en/stable/stack_yaml_vs_cabal_package_file/)
-- [Stack FAQs](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md)
+* [Problems with Cabal and how to avoid](https://wiki.haskell.org/Cabal/Survival)
+* [Cabal github repo](https://github.com/haskell/cabal)
+* [Why is Stack not Cabal](https://www.fpcomplete.com/blog/2015/06/why-is-stack-not-cabal)
+* [Stackage is Stable Hackage and packages here have been tested to avoid dependency conflicts](https://www.stackage.org/)
+* [Stack.yaml versus .Cabal](https://docs.haskellstack.org/en/stable/stack_yaml_vs_cabal_package_file/)
+* [Stack FAQs](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md)
 
 ## Notes
-
 
 Packages GHC can use >  Are registered with "ghc-pkg register" > And (almost always) built with Cabal >  With build dependencies resolved by cabal-install > From Hackage.
 Packages GHC can use >  Are registered with "ghc-pkg register" > And (almost always) built with Cabal >  With build dependencies resolved by stack > From Stackage (if possible...) or Hackage
 
+* Stackage specifies a 'resolver'
 
-- Stackage specifies a 'resolver' 
 > a GHC version, a number of packages available for installation, and various settings like build flags"
 
 [Global Stack managed dependencies](https://docs.haskellstack.org/en/stable/yaml_configuration/):
-- `/etc/stack/config.yaml` - for system global non-project default options
-- `~/.stack/config.yaml` - for user non-project default options
+
+* `/etc/stack/config.yaml` - for system global non-project default options
+* `~/.stack/config.yaml` - for user non-project default options
+
 When stack is invoked outside a stack project it will source project specific options from `~/.stack/global-project/stack.yaml`. When stack is invoked inside a stack project, only options from `<project dir>/stack.yaml` are used, and `~/.stack/global-project/stack.yaml` is ignored.
 
-
 ## Environment setup
-
 
 ### What is my global ghc, why, and how do I change it?
 
@@ -93,11 +96,13 @@ ghc -v
 ```
 
 But really you probably want to be using a Stack managed global setup e.g. outside of a project folder, run one of the following commands:
+
 ```bash
 stack ghci -v
 stack ghc -v
 ```
-This should tell you in the logs that you are using e.g. `.stack/global-project/stack.yaml`. The `resolver` field in this file will determine which ghc version you are using. 
+
+This should tell you in the logs that you are using e.g. `.stack/global-project/stack.yaml`. The `resolver` field in this file will determine which ghc version you are using.
 
 ### What is my project GHC, why, and where is it stored?
 
@@ -123,7 +128,6 @@ Within the ghci REPL/command prompt, you can rename (to e.g. `λ >`) using `:set
 :set prompt  "\x03BB > "
 ```
 
-
 ### Language extensions in GHCI
 
 ```bash
@@ -133,6 +137,7 @@ Within the ghci REPL/command prompt, you can rename (to e.g. `λ >`) using `:set
 ## Multiline input
 
 [Multiline input](https://en.wikibooks.org/wiki/Haskell/Using_GHCi_effectively)
+
 ```text
    *Main> :{
    *Main| let askname = do
@@ -142,7 +147,6 @@ Within the ghci REPL/command prompt, you can rename (to e.g. `λ >`) using `:set
    *Main| :}
    *Main>
 ```
-
 
 ## Template Haskell
 

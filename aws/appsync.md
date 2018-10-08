@@ -9,4 +9,3 @@ Add the following header to e.g. [Graphql Playground](https://github.com/prismag
   "x-api-key": "[DASHBOARD GENERATED API KEY]"
 }
 ```
-
