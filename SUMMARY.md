@@ -4,23 +4,23 @@
 * AWS
   * [Appsync](aws/appsync.md)
   * [Athena](aws/athena.md)
-* CLIs
+* Command Line
   * [Command Line](clis/cmd.md)
   * [cURL](clis/curl.md)
   * [Git](clis/git.md)
 * Design
-  * [Fusion360](design/fusion360.md)
   * [Sketch](design/sketch.md)
+  * [Fusion360](design/fusion360.md)
   * [TinkerCAD](design/tinkercad.md)
 * Haskell
   * [Haskell](haskell/haskell.md)
 * Javascript
   * [Javascript](javascript/javascript.md)
   * [npm](javascript/npm.md)
-* Mac Software
-  * [Mac](mac-software/mac.md)
-  * [VSCode](mac-software/vscode.md)
+* [Mac](mac.md)
 * Python
   * [iPython](python/ipython.md)
   * [pip](python/pip.md)
   * [Virtualenv](python/virtualenv.md)
+* [Rust](rust.md)
+* [VSCode](vscode.md)
