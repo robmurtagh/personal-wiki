@@ -17,6 +17,8 @@
 * Javascript
   * [Javascript](javascript/javascript.md)
   * [npm](javascript/npm.md)
+* CSS
+  * [CSS](css.md)
 * [Mac](mac.md)
 * Python
   * [iPython](python/ipython.md)
