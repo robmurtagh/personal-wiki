@@ -1,19 +1,16 @@
 # Fusion 360
 
-## Pan camera
+## Basic mouse controls
 
-* Mouse: Click and drag the middle mouse wheel
-* Trackpad: Two finger drag
+* Pan: Click and drag middle wheel
+* Orbit: Shift + Click and drag middle wheel
+* Shortcuts: Right click + Drag
 
-## Rotate camera
+## Basic trackpad controls
 
-* Mouse: Shift + Click and drag the middle mouse wheel
-* Trackpad: Shift + Two finger drag
-
-## Shortcuts
-
-* Mouse: Right click + Drag
-* Trackpad: Two finger tap
+* Pan: Two finger drag
+* Orbit: Shift + Two finger drag
+* Shortcuts: Two finger tap
 
 ## Rename a project
 

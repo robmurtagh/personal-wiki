@@ -1,5 +1,18 @@
 # CSS
 
+## Tachyons
+
+[Tachyons](http://tachyons.io) is an excellent 'functional CSS' library in which each class name has one responsibility. For example the Tachyons class `.ba` stands for `border-style:solid;border-width:1px`, there would not be a Tachyons class called e.g. `.button-active` as that would encompass many different - design specific - CSS functions.
+
+### Tachyons Media Queries
+
+Tachyons classes have suffixes:
+
+* `[no-suffix]` = applies for all screensizes, and hence is the 'mobile' version
+* `-ns`  = not-small (min-width: 30em)
+* `-m`   = medium (min-width: 30em) and (max-width: 60em)
+* `-l`   = large (min-width: 60em)
+
 ## Pseudo elements
 
 * [Pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) are worth remembering, they let you style an element based on some property of that element (e.g. `::first-line`), or add elements to the DOM in a suitable position (e.g. `::before`, `::after`).

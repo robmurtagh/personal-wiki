@@ -14,6 +14,7 @@
   * [TinkerCAD](design/tinkercad.md)
 * Haskell
   * [Haskell](haskell/haskell.md)
+  * [Stack, Cabal etc](haskell/stack-cabal-etc.md)
 * Javascript
   * [Javascript](javascript/javascript.md)
   * [npm](javascript/npm.md)
