@@ -1,5 +1,11 @@
 # Personal Wiki
 
+Hi, I'm Rob. Thanks for visiting.
+
+I'm a full-stack software developer and these are my notes.
+
+You can find me on [Github](https://github.com/robmurtagh), [Twitter](https://twitter.com/rjmurtagh), [Stack Overflow](https://stackoverflow.com/users/3052692/rjmurt), or at my [personal website](https://www.robmurtagh.com/).
+
 ## What notes I keep
 
 Welcome to my personal wiki where keep a record of things I don't find obvious in my day-to-day work. Most of the notes here relate to software development on a Mac computer.
