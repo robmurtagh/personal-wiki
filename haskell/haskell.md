@@ -55,3 +55,21 @@ data Expr = I Int         -- integer constants
           | Mul Expr Expr -- multiply two expressions
           deriving (Show)
 ```
+
+## Generalised Algebraic Datatypes (GADTs)
+
+The crux of [GADTs](https://en.wikibooks.org/wiki/Haskell/GADT) is that the provide a way to explicitly declare the type signature of each constructor.
+
+The following language option is required:
+
+```haskell
+{-#LANGUAGE GADTs #-}
+```
+
+And then an example would be:
+
+```haskell
+data Maybe a where
+   Nothing  :: Maybe a
+   Just :: a -> Maybe a
+```
