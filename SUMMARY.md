@@ -2,6 +2,7 @@
 
 * [Welcome](README.md)
 * AWS
+  * [AWS](aws/aws.md)
   * [Appsync](aws/appsync.md)
   * [Athena](aws/athena.md)
 * Command Line
