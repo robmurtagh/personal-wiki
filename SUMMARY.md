@@ -5,6 +5,7 @@
   * [AWS](aws/aws.md)
   * [Appsync](aws/appsync.md)
   * [Athena](aws/athena.md)
+  * [S3](aws/s3.md)
 * Command Line
   * [Command Line](clis/cmd.md)
   * [cURL](clis/curl.md)
@@ -26,5 +27,6 @@
   * [iPython](python/ipython.md)
   * [pip](python/pip.md)
   * [Virtualenv](python/virtualenv.md)
+* [Scala](scala.md)
 * [Rust](rust.md)
 * [VSCode](vscode.md)

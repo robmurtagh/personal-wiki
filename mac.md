@@ -19,6 +19,14 @@ Command + Shift + V
 Cmd + F3
 ```
 
+## Create new directory
+
+(If the parent directory is too full there's nowhere to right click)
+
+```text
+Cmd + Shift + N
+```
+
 ## Switch between two windows of the same app
 
 ```text
