@@ -2,7 +2,7 @@
 
 ## Spread syntax
 
-Use the [Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) to expand an iterable e.g. an object into its components.
+Use the [Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) to expand an iterable (e.g. an object) into its components.
 
 An example of merging with shallow clone would be:
 
@@ -16,35 +16,42 @@ console.log(obj3);
 - `obj3` contains a copy of `obj1` and `obj2` as they were when `obj3` was created
 - `obj3` is not a reference to the current state of `obj1` and `obj2`
 
-## Executing async functions in series
+## Executing asynchronous functions in series and parallel
 
-One way of doing this is:
+Example snippet:
 
 ```javascript
-async function executeAsyncFuncsInSeries(promises) {
-  for (let promise of promises) {
-    await promise();
-  }
-  return {};
-}
+const executeInSeries = async (promises) => {
+    var results = [];
+    for (let promise of promises) {
+        results.push(await promise());
+    }
+    return results;
+};
 
-const asyncFuncs = argumentList.map(argument => {
-  return () => {
-    return new Promise((resolve, reject) => {
-      functionReturningPromise(argument)
-        .then(() => resolve())
-        .catch(error =>
-          reject({
-            error_code: "SOMETHING_CUSTOM",
-            error_message: "SOMETHING_INFORMATIVE",
-            ...error
-          })
-        );
+const executeInParallel = (promises) => {
+    return Promise.all(promises);
+};
+
+const generateTimeoutPromise = () => {
+    return new Promise((resolve, _reject) => {
+        setTimeout(() => {
+            console.log("COMPLETE: timeoutPromise");
+            resolve("RESOLVED: Complete");
+        }, 2000);
     });
-  };
+};
+
+executeInSeries([generateTimeoutPromise, generateTimeoutPromise, generateTimeoutPromise]).then((results) => {
+    console.log("COMPLETE: executeInSeries");
+    console.log("RESOLVED: executeInSeries");
+    console.log(results);
 });
-return executeAsyncFuncsInSeries(asyncFuncs).then(() => {
-  console.log("All done...");
+
+executeInParallel([generateTimeoutPromise(), generateTimeoutPromise(), generateTimeoutPromise()]).then((results) => {
+    console.log("COMPLETE: executeInParallel");
+    console.log("RESOLVED: executeInParallel");
+    console.log(results);
 });
 ```
 
