@@ -1,8 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
-* AWS
-  * [AWS](aws/aws.md)
+* [AWS](aws/README.md)
   * [Appsync](aws/appsync.md)
   * [Athena](aws/athena.md)
   * [S3](aws/s3.md)

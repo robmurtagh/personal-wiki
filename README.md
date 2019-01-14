@@ -1,4 +1,4 @@
-# Personal Wiki
+# personal-wiki
 
 Hi, I'm Rob. Thanks for visiting. I'm a full-stack software developer and these are my notes.
 
