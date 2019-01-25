@@ -29,6 +29,10 @@ You can give [multiline input](https://en.wikibooks.org/wiki/Haskell/Using_GHCi_
 
 It is used e.g. by `lens` to generate the various lenses into data structures __at compile time__
 
+## Guard syntax
+
+[Guard Syntax](https://en.wikibooks.org/wiki/Haskell/Control_structures#if_and_guards_revisited) allows us to conditionally check a statement within a pattern matching expression.
+
 ## Forall Keyword
 
 `forall` [imposes constraints on parameterising types](https://en.m.wikibooks.org/wiki/Haskell/Existentially_quantified_types) when defining new data types

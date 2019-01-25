@@ -26,13 +26,22 @@ stack build && stack exec package-name-exe
 
 ## Install a dependency
 
-* For a global package install, like `npm install -g package` use cabal NOT stack:
+* For a global package install, (like `npm install -g package`) use cabal NOT stack:
 
 ```bash
 cabal update && cabal install package
 ```
 
-* For a local package install restricted to only a stack project e.g. `npm install --save package`, use `project.cabal`:
+* For a local package install restricted to only a stack project (like `npm install --save package`):
+
+```text
+    dependencies:
+    - haskell-hspec
+    - hspec
+    - QuickCheck
+```
+
+* This will in turn generate an edit to the project's Cabal file `project.cabal`:
 
 ```text
   build-depends:       base
