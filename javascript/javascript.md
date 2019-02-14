@@ -21,37 +21,45 @@ console.log(obj3);
 Example snippet:
 
 ```javascript
-const executeInSeries = async (promises) => {
-    var results = [];
-    for (let promise of promises) {
-        results.push(await promise());
-    }
-    return results;
+const executeInSeries = async promises => {
+  var results = [];
+  for (let promise of promises) {
+    results.push(await promise());
+  }
+  return results;
 };
 
-const executeInParallel = (promises) => {
-    return Promise.all(promises);
+const executeInParallel = promises => {
+  return Promise.all(promises);
 };
 
 const generateTimeoutPromise = () => {
-    return new Promise((resolve, _reject) => {
-        setTimeout(() => {
-            console.log("COMPLETE: timeoutPromise");
-            resolve("RESOLVED: Complete");
-        }, 2000);
-    });
+  return new Promise((resolve, _reject) => {
+    setTimeout(() => {
+      console.log("COMPLETE: timeoutPromise");
+      resolve("RESOLVED: Complete");
+    }, 2000);
+  });
 };
 
-executeInSeries([generateTimeoutPromise, generateTimeoutPromise, generateTimeoutPromise]).then((results) => {
-    console.log("COMPLETE: executeInSeries");
-    console.log("RESOLVED: executeInSeries");
-    console.log(results);
+executeInSeries([
+  generateTimeoutPromise,
+  generateTimeoutPromise,
+  generateTimeoutPromise
+]).then(results => {
+  console.log("COMPLETE: executeInSeries");
+  console.log("RESOLVED: executeInSeries");
+  console.log(results);
 });
 
-executeInParallel([generateTimeoutPromise(), generateTimeoutPromise(), generateTimeoutPromise()]).then((results) => {
-    console.log("COMPLETE: executeInParallel");
-    console.log("RESOLVED: executeInParallel");
-    console.log(results);
+executeInParallel([
+  generateTimeoutPromise(),
+  generateTimeoutPromise(),
+  generateTimeoutPromise()
+]).then(results => {
+  console.log("COMPLETE: executeInParallel");
+  console.log("RESOLVED: executeInParallel");
+  console.log(results);
 });
 ```
 
@@ -85,5 +93,25 @@ Finally I have the following setting to always turn off certain file types from 
 ```json
 "[handlebars]": {
   "editor.formatOnSave": false
+}
+```
+
+## ESLint
+
+ESLint apparently respects the following element of `package.json`:
+
+```json
+"engines": {
+    "node": ">=10.6.0"
+}
+```
+
+I tend to also add the following `.eslintrc` to support ES6 features:
+
+```json
+{
+  "env": {
+    "es6": true
+  }
 }
 ```
