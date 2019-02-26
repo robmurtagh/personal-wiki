@@ -59,3 +59,7 @@ git remote show origin
 ## Useful resources
 
 - [Using master, release and feature branches](https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369) as a team
+
+## Download one folder from repo
+
+Use [DownGit](https://minhaskamal.github.io/DownGit/#/home)

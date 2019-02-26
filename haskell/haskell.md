@@ -5,6 +5,7 @@
 * `:reload` reload all names in scope
 * `:quit`
 * `:t 9` returns the type of `9`
+* `:info []` returns lots of useful details about the implemented typeclasses
 * `:k Int` returns the kind of `Int`
 * `:set prompt  "\x03BB > "` would change the command prompt to `λ >`
 * `:set -XExistentialQuantification` sets up the language extension
@@ -23,6 +24,14 @@ You can give [multiline input](https://en.wikibooks.org/wiki/Haskell/Using_GHCi_
 
 ## General syntax
 
+### Quick reference:
+
+The best way to find out about these kind of constructs in ghci, e.g. `:info <*>`:
+
+* `(.)` - Function composition
+* `<*>`
+* `$`
+
 ### Guard syntax
 
 [Guard Syntax](https://en.wikibooks.org/wiki/Haskell/Control_structures#if_and_guards_revisited) allows us to conditionally check a statement within a pattern matching expression.
@@ -35,15 +44,25 @@ describeLetter c
    | otherwise            = "Not an ASCII letter"
 ```
 
-## Modules
+### Modules
 
 [This page](http://learnyouahaskell.com/modules) from 'Learn you a Haskell' is a good reference.
 
-### Import hiding
+* Import hiding
 
 ```haskell
 import Data.List hiding (nub)  
 ```
+
+### Indentation
+
+From [this page](https://en.wikibooks.org/wiki/Haskell/Indentation), the golden rule of indentation is:
+
+> Code which is part of some expression should be indented further in than the beginning of that expression...All _grouped_ expressions must be exactly aligned
+
+But you can avoid indentation:
+
+> Indentation is actually optional if you instead use semicolons and curly braces
 
 ## Types and Typeclasses
 
