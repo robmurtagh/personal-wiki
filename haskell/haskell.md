@@ -44,6 +44,32 @@ describeLetter c
    | otherwise            = "Not an ASCII letter"
 ```
 
+### 'where' clause
+
+Define inline bindings (e.g. to functions or values). The [following example](http://learnyouahaskell.com/syntax-in-functions) uses guards and a where clase:
+
+```haskell
+bmiTell :: (RealFloat a) => a -> a -> String  
+bmiTell weight height  
+    | bmi <= 18.5 = "You're underweight, you emo, you!"  
+    | bmi <= 25.0 = "You're supposedly normal. Pffft, I bet you're ugly!"  
+    | bmi <= 30.0 = "You're fat! Lose some weight, fatty!"  
+    | otherwise   = "You're a whale, congratulations!"  
+    where bmi = weight / height ^ 2
+```
+
+### 'as' Pattern
+
+The 'as' pattern (described [here](https://stackoverflow.com/questions/1153465/what-does-the-symbol-mean-in-reference-to-lists-in-haskell), [here](http://learnyouahaskell.com/syntax-in-functions) and [here](https://www.haskell.org/onlinereport/exps.html#sect3.17.1)), gives us a way of matching a name for the entire element being pattern matched in a list:
+
+The following would be read `all as (x:xs)`:
+
+```haskell
+capital :: String -> String  
+capital "" = "Empty string, whoops!"  
+capital all@(x:xs) = "The first letter of " ++ all ++ " is " ++ [x]
+```
+
 ### Modules
 
 [This page](http://learnyouahaskell.com/modules) from 'Learn you a Haskell' is a good reference.
