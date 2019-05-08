@@ -42,7 +42,7 @@ git push -—force origin
 
 ## 'SVN update'
 
-Something along the lines of should bring underlying versions up to date:
+Something along the lines of the below should bring underlying versions up to date:
 
 ```bash
 git stash
