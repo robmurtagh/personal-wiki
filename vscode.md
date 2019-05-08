@@ -17,6 +17,7 @@
 | `⌥ + ⌘ + C`       | Collapse explorer folders | File: Collapse Folders in Explorer |  ✓ |
 | `^ + -`           | Go back from definition | | |
 | `^ + =`           | Go to definition | | ✓ |
+| `^ + ⌥ + Z`       | Refresh git            | Refresh git | ✓ |
 
 Chrome
 
