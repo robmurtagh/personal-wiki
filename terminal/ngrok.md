@@ -2,7 +2,7 @@
 
 [ngrok](https://ngrok.com/) is incredibly useful for publishing `localhost` servers as temporary publicly available sites
 
-Install it on your path and then run e.g. 
+Install it on your path and then run e.g.
 
 ```bash
 ngrok http 8080
