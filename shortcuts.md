@@ -2,8 +2,6 @@
 
 ## VSCode
 
-[Shortcuts reference](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
-
 | Shortcut        | Description               | VSCode Name                        | Custom shortcut? |
 | --------------- | ------------------------- | ---------------------------------- | ---------------- |
 | `⌘ + P`         | Go to file dialog         |                                    |                  |
@@ -21,24 +19,26 @@
 | `^ + =`         | Go to definition          |                                    | ✓                |
 | `^ + ⌥ + Z`     | Refresh git               | Refresh git                        | ✓                |
 
+[Shortcuts reference](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+
 ## Mac, Chrome etc
 
 | Shortcut    | Description                                                | Custom shortcut?                                                     |
 | ----------- | ---------------------------------------------------------- | -------------------------------------------------------------------- |
 | `⌥ + ⌘ + →` | Chrome: Next tab                                           |                                                                      |
 | `⌘ + W`     | Mac: Close current tab                                     |                                                                      |
-| `⌘ + M`     | Mac: Minimize the current tab to doc                       |                                                                      |
+| `⌘ + M`     | Mac: Minimize the current tab to dock                      |                                                                      |
 | `⌘ + ⇥ + ↓` | Mac: Use the arrow keys to navigate and reopen closed tabs |                                                                      |
-| `⌘ + ↑`     | Mac: Expand window                                         | ✓ (Keyboard > Shortcuts > App Shortcuts > All Applications > 'Zoom') |
+| `^ + ⌘ + ↑` | Mac: Expand window                                         | ✓ (Keyboard > Shortcuts > App Shortcuts > All Applications > 'Zoom') |
 
 ## Character Index
 
-`⌘` = Command
-`^` = Control
-`↵` = Enter
-`⇥` = Tab
-`⌥` = Option (/Alt)
-`↑` = Up key
-`↓` = Down key
-`←` = Left key
-`→` = Right key
+- `⌘` = Command
+- `^` = Control
+- `↵` = Enter
+- `⇥` = Tab
+- `⌥` = Option (/Alt)
+- `↑` = Up key
+- `↓` = Down key
+- `←` = Left key
+- `→` = Right key
