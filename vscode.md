@@ -1,5 +1,13 @@
 # VSCode
 
+## Add `code` to terminal
+
+See [this page](https://code.visualstudio.com/docs/setup/mac) for adding the `code` command so VSCode can be launched from terminal:
+
+```bash
+code some_directory
+```
+
 ## Choose tab
 
 ```text
@@ -25,12 +33,4 @@ Preferences > Keyboard Shortcut > workbench.action.gotoSymbol:
 ```text
 Cmd + Shift + O
 (optionally then type ':')
-```
-
-## Add `code` to terminal
-
-See [this page](https://code.visualstudio.com/docs/setup/mac) for adding VSCode to the path so that you can run e.g.
-
-```bash
-code some_directory
 ```

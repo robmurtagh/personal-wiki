@@ -5,10 +5,15 @@
   - [Appsync](aws/appsync.md)
   - [Athena](aws/athena.md)
   - [S3](aws/s3.md)
-- Command Line
-  - [Command Line](terminal/terminal.md)
-  - [cURL](terminal/curl.md)
-  - [Git](terminal/git.md)
+- Terminal
+  - [brew](terminal/brew.md)
+  - [curl](terminal/curl.md)
+  - [git](terminal/git.md)
+  - [kubernetes](terminal/kubernetes.md)
+  - [ngrok](terminal/ngrok.md)
+  - [terminal](terminal/terminal.md)
+  - [tmux](terminal/tmux.md)
+  - [zsh](terminal/zsh.md)
 - Design
   - [Sketch](design/sketch.md)
   - [Fusion360](design/fusion360.md)

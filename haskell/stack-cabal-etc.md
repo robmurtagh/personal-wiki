@@ -1,6 +1,6 @@
 # Stack, Cabal etc
 
-[Stack](https://docs.haskellstack.org/en/stable/README/) is *a* (not the only) Haskell standard for scaffolding, building, packaging and managing dependencies for a project. It uses [Cabal](https://www.haskell.org/cabal/) under the covers. The interplay between Stack, Cabal and [HPack](https://github.com/sol/hpack) makes this area a bit of a minefield.
+[Stack](https://docs.haskellstack.org/en/stable/README/) is _a_ (not the only) Haskell standard for scaffolding, building, packaging and managing dependencies for a project. It uses [Cabal](https://www.haskell.org/cabal/) under the covers. The interplay between Stack, Cabal and [HPack](https://github.com/sol/hpack) makes this area a bit of a minefield.
 
 ## Start a new stack project
 
@@ -26,13 +26,13 @@ stack build && stack exec package-name-exe
 
 ## Install a dependency
 
-* For a global package install, (like `npm install -g package`) use cabal NOT stack:
+- For a global package install, (like `npm install -g package`) use cabal NOT stack:
 
 ```bash
 cabal update && cabal install package
 ```
 
-* For a local package install restricted to only a stack project (like `npm install --save package`):
+- For a local package install restricted to only a stack project (like `npm install --save package`):
 
 ```text
     dependencies:
@@ -41,7 +41,7 @@ cabal update && cabal install package
     - QuickCheck
 ```
 
-* This will in turn generate an edit to the project's Cabal file `project.cabal`:
+- This will in turn generate an edit to the project's Cabal file `project.cabal`:
 
 ```text
   build-depends:       base
@@ -99,21 +99,27 @@ ghc-pkg list
 stack list-dependencies
 ```
 
+### Where does stack build my executables?
+
+```bash
+stack path --local-install-root
+```
+
 ## Useful resources
 
-* [Problems with Cabal and how to avoid](https://wiki.haskell.org/Cabal/Survival)
-* [Cabal github repo](https://github.com/haskell/cabal)
-* [Why is Stack not Cabal](https://www.fpcomplete.com/blog/2015/06/why-is-stack-not-cabal)
-* [Stackage is Stable Hackage and packages here have been tested to avoid dependency conflicts](https://www.stackage.org/)
-* [Stack.yaml versus .Cabal](https://docs.haskellstack.org/en/stable/stack_yaml_vs_cabal_package_file/)
-* [Stack FAQs](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md)
+- [Problems with Cabal and how to avoid](https://wiki.haskell.org/Cabal/Survival)
+- [Cabal github repo](https://github.com/haskell/cabal)
+- [Why is Stack not Cabal](https://www.fpcomplete.com/blog/2015/06/why-is-stack-not-cabal)
+- [Stackage is Stable Hackage and packages here have been tested to avoid dependency conflicts](https://www.stackage.org/)
+- [Stack.yaml versus .Cabal](https://docs.haskellstack.org/en/stable/stack_yaml_vs_cabal_package_file/)
+- [Stack FAQs](https://github.com/commercialhaskell/stack/blob/master/doc/faq.md)
 
 ## Notes
 
 The logic for resolving dependencies without and with Stack is as follows:
 
-* Packages GHC can use >  Are registered with "ghc-pkg register" > And (almost always) built with Cabal >  With build dependencies resolved by cabal-install > From Hackage.
-* Packages GHC can use >  Are registered with "ghc-pkg register" > And (almost always) built with Cabal >  With build dependencies resolved by stack > From Stackage (if possible...) or Hackage
+- Packages GHC can use > Are registered with "ghc-pkg register" > And (almost always) built with Cabal > With build dependencies resolved by cabal-install > From Hackage.
+- Packages GHC can use > Are registered with "ghc-pkg register" > And (almost always) built with Cabal > With build dependencies resolved by stack > From Stackage (if possible...) or Hackage
 
 Stackage specifies a 'resolver'
 
@@ -121,7 +127,7 @@ Stackage specifies a 'resolver'
 
 [Global Stack managed dependencies](https://docs.haskellstack.org/en/stable/yaml_configuration/):
 
-* `/etc/stack/config.yaml` - for system global non-project default options
-* `~/.stack/config.yaml` - for user non-project default options
+- `/etc/stack/config.yaml` - for system global non-project default options
+- `~/.stack/config.yaml` - for user non-project default options
 
 When stack is invoked outside a stack project it will source project specific options from `~/.stack/global-project/stack.yaml`. When stack is invoked inside a stack project, only options from `<project dir>/stack.yaml` are used, and `~/.stack/global-project/stack.yaml` is ignored.

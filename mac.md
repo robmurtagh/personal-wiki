@@ -1,12 +1,5 @@
 # Mac
 
-## Screenshot just one window
-
-```text
-Command + Shift + 4
-Spacebar
-```
-
 ## Paste without formatting
 
 ```text

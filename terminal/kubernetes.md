@@ -1,5 +1,17 @@
 # Kubernetes, Helm and Docker
 
+- You can describe a namespace (useful for e.g. `kube2iam`):
+
+```sh
+kubectl describe namespace [namespace]
+```
+
+- Gitops flux:
+
+```sh
+fluxctl sync --k8s-fwd-ns [namespace]
+```
+
 - Launch with terminal and custom entry point:
 
 ```sh
@@ -9,8 +21,7 @@ docker run -it --entrypoint=/bin/bash flyway/flyway:latest
 - Work on dev machine:
 
 ```sh
-kname dev-triage
-kexec devmachine
+kexec -it [pod] -- bash
 ```
 
 - Deploy a yaml file with Kubernetes:
